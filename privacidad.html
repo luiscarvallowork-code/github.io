@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politica de Privacidad — Remedina</title>
+  <meta name="description" content="Politica de privacidad de la aplicacion Remedina." />
+  <style>
+    :root {
+      --pink: #ff5d8f;
+      --pink-deep: #ffe3ee;
+      --plum: #3a2b5c;
+      --muted: #6b6480;
+      --border: #ece8f2;
+      --bg: #faf8fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--plum);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 64px; }
+    header.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .mark {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--pink), #ffd166);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 26px; font-weight: 700;
+    }
+    .brand h1 { font-size: 24px; margin: 0; }
+    .card {
+      background: #fff; border: 1px solid var(--border); border-radius: 18px;
+      padding: 32px; box-shadow: 0 6px 20px rgba(58, 43, 92, 0.05);
+    }
+    h2 { font-size: 20px; margin: 4px 0 0; }
+    h3 { font-size: 16px; margin: 26px 0 6px; color: var(--pink); }
+    p { margin: 0 0 14px; }
+    ul { padding-left: 20px; margin: 0 0 14px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--pink); font-weight: 600; }
+    .updated { color: var(--muted); font-size: 14px; margin-top: 2px; }
+    .who { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+    .note {
+      background: var(--pink-deep); border-radius: 12px; padding: 14px 18px;
+      font-size: 14px; margin-top: 8px;
+    }
+    footer { margin-top: 32px; color: var(--muted); font-size: 13px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brand">
+      <div class="mark">+</div>
+      <h1>Remedina</h1>
+    </header>
+
+    <div class="card">
+      <h2>Politica de Privacidad</h2>
+      <p class="updated"><strong>Ultima actualizacion:</strong> [FECHA]</p>
+      <p class="who">
+        <strong>Responsable:</strong> [NOMBRE LEGAL DEL RESPONSABLE], RIF [RIF], Venezuela.
+        <strong>Contacto:</strong> <a href="mailto:[correo de contacto]">[correo de contacto]</a>
+      </p>
+
+      <h3>1. Que es Remedina</h3>
+      <p>
+        Remedina es una aplicacion movil para la gestion de medicamentos y pedidos a
+        farmacias. Permite crear recordatorios de dosis, ver tu perfil de salud, recibir
+        tips, y realizar pedidos de productos a farmacias aliadas.
+      </p>
+
+      <h3>2. Que datos recolectamos</h3>
+      <ul>
+        <li><strong>Identificacion y contacto:</strong> nombre completo, correo electronico, telefono y cedula.</li>
+        <li><strong>Datos de salud que tu nos das:</strong> fecha de nacimiento (para calcular tu edad), condiciones o enfermedades que declares, tratamientos, dosis y recordatorios.</li>
+        <li><strong>Pedidos:</strong> productos pedidos, cantidades, montos, referencia de pago y estado del pedido.</li>
+        <li><strong>Ubicacion (opcional):</strong> si autorizas el permiso de ubicacion, usamos tu posicion en el momento del pedido para recomendarte la farmacia mas cercana con stock. No guardamos tu ubicacion de forma permanente.</li>
+        <li><strong>Perfil de Google (opcional):</strong> si eliges "Continuar con Google", recibimos tu nombre, correo y foto de perfil. No accedemos a Gmail, Drive ni a otros datos de Google.</li>
+      </ul>
+
+      <h3>3. Para que usamos los datos</h3>
+      <ul>
+        <li>Darte acceso a la app y mantener tu sesion.</li>
+        <li>Personalizar tus recordatorios y los tips de salud segun tus condiciones y edad.</li>
+        <li>Buscar y mostrarte disponibilidad y precios de productos.</li>
+        <li>Procesar y dar seguimiento a tus pedidos con la farmacia.</li>
+        <li>Brindarte soporte y responder a tus consultas.</li>
+      </ul>
+      <p>No usamos tus datos para publicidad ni los vendemos a terceros.</p>
+
+      <h3>4. Con quien compartimos los datos</h3>
+      <ul>
+        <li><strong>Supabase:</strong> proveedor de base de datos, autenticacion y almacenamiento donde se guarda la informacion de forma segura.</li>
+        <li><strong>Google:</strong> solo para el inicio de sesion con Google, cuando tu lo eliges.</li>
+        <li><strong>Farmacias aliadas y su proveedor de inventario (Plade):</strong> para procesar tu pedido les enviamos los datos necesarios (productos, cantidades, referencia de pago). La factura queda registrada a nombre de un cliente de la aplicacion, no a tu nombre.</li>
+      </ul>
+      <p>Fuera de estos casos, no compartimos tus datos con terceros salvo obligacion legal.</p>
+
+      <h3>5. Seguridad</h3>
+      <p>
+        Usamos autenticacion de Supabase y controles de acceso a nivel de fila para que
+        cada paciente solo pueda ver y modificar su propia informacion.
+      </p>
+
+      <h3>6. Cuanto tiempo guardamos los datos</h3>
+      <p>
+        Conservamos tus datos mientras mantengas tu cuenta. Si solicitas el borrado,
+        eliminamos tu informacion, salvo lo que debamos conservar por obligaciones legales
+        o contables (por ejemplo, registros de pedidos ya facturados).
+      </p>
+
+      <h3>7. Tus derechos</h3>
+      <p>Puedes solicitar en cualquier momento:</p>
+      <ul>
+        <li>Acceder a los datos que tenemos sobre ti.</li>
+        <li>Corregirlos o actualizarlos (desde la app o escribiendonos).</li>
+        <li>Solicitar la eliminacion de tu cuenta y tus datos.</li>
+      </ul>
+      <p>Para ejercerlos, escribenos a <a href="mailto:[correo de contacto]">[correo de contacto]</a>.</p>
+
+      <h3>8. Menores de edad</h3>
+      <p>
+        Si eres menor de edad, la cuenta debe ser creada y administrada por un padre,
+        madre o representante legal.
+      </p>
+
+      <h3>9. Cambios a esta politica</h3>
+      <p>
+        Podemos actualizar esta politica. Publicaremos la version vigente en esta misma
+        pagina con la fecha de la ultima actualizacion.
+      </p>
+
+      <h3>10. Contacto</h3>
+      <p>Dudas sobre privacidad: <a href="mailto:[correo de contacto]">[correo de contacto]</a>.</p>
+
+      <div class="note">
+        Recuerda reemplazar [NOMBRE LEGAL DEL RESPONSABLE], [RIF], [correo de contacto] y
+        [FECHA] antes de publicar. El correo debe existir y recibir mensajes.
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="./index.html">Volver al inicio</a></p>
+    </footer>
+  </div>
+</body>
+</html>
